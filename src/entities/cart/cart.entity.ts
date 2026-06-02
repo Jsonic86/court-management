@@ -2,22 +2,22 @@ import { Entity, PrimaryKey, Property } from '@mikro-orm/core';
 import { ObjectId } from '@mikro-orm/mongodb';
 
 @Entity()
-export class Payment {
+export class Cart {
   @PrimaryKey()
-  _id!: ObjectId;
+  _id: ObjectId;
 
   @Property()
-  bookingId!: ObjectId;
+  public_id: string;
 
   @Property()
-  amount!: number;
+  customer_user_id: ObjectId | null;
 
   @Property()
-  method!: string;
-
-  @Property({ default: 'pending' })
-  status!: string;
+  currency: string;
 
   @Property()
-  createdAt: Date = new Date();
+  status: number;
+
+  @Property()
+  expires_at: Date;
 }
