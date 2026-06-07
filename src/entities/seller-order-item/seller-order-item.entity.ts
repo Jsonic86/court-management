@@ -7,13 +7,13 @@ export class SellerOrderItem {
   _id: ObjectId;
 
   @Property()
-  seller_order_id: ObjectId;
+  sellerOrderId: ObjectId;
 
   @Property()
-  seller_template_id: ObjectId;
+  sellerTemplateId: ObjectId;
 
   @Property()
-  template_snapshot: any;
+  templateSnapshot: any;
 
   @Property()
   overrides: any;
@@ -22,20 +22,20 @@ export class SellerOrderItem {
   quantity: number;
 
   @Property()
-  unit_price_cents: number;
+  unitPriceCents: number;
 
   @Property()
-  line_total_cents: number;
+  lineTotalCents: number;
 
   @Property()
-  print_png_token: ObjectId | null;
+  printPngToken: ObjectId | null;
 
   @Property()
-  cut_svg_token: ObjectId | null;
+  cutSvgToken: ObjectId | null;
 
   @Property()
-  preview_png_token: ObjectId | null;
+  previewPngToken: ObjectId | null;
 
   @Property()
-  production_status: number;
+  productionStatus: number;
 }

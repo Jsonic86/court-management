@@ -7,29 +7,29 @@ export class CartItem {
   _id: ObjectId;
 
   @Property()
-  cart_id: ObjectId;
+  cartId: ObjectId;
 
   @Property()
-  seller_template_id: ObjectId;
+  sellerTemplateId: ObjectId;
 
   @Property()
-  template_snapshot: any;
+  templateSnapshot: any;
 
   @Property()
   overrides: any;
 
   @Property()
-  thumbnail_storage_key: string | null;
+  thumbnailStorageKey: string | null;
 
   @Property()
   quantity: number;
 
   @Property()
-  unit_price_cents: number;
+  unitPriceCents: number;
 
   @Property()
   currency: string;
 
   @Property()
-  added_at: Date;
+  addedAt: Date;
 }

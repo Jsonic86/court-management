@@ -6,20 +6,20 @@ export class SellerTemplateAsset {
   _id: ObjectId;
 
   @Property()
-  seller_template_id: ObjectId;
+  sellerTemplateId: ObjectId;
 
   @Property()
-  layer_id: string;
+  layerId: string;
 
   @Property()
-  png_storage_key: string;
+  pngStorageKey: string;
 
   @Property()
-  width_px: number;
+  widthPx: number;
 
   @Property()
-  height_px: number;
+  heightPx: number;
 
   @Property()
-  byte_size: number;
+  byteSize: number;
 }

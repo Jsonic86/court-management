@@ -7,10 +7,10 @@ export class Cart {
   _id: ObjectId;
 
   @Property()
-  public_id: string;
+  publicId: string;
 
   @Property()
-  customer_user_id: ObjectId | null;
+  customerUserId: ObjectId | null;
 
   @Property()
   currency: string;
@@ -19,5 +19,5 @@ export class Cart {
   status: number;
 
   @Property()
-  expires_at: Date;
+  expiresAt: Date;
 }

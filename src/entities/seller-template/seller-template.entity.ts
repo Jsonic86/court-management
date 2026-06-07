@@ -57,13 +57,13 @@ export class SellerTemplate {
   _id!: ObjectId;
 
   @Property()
-  public_id!: string;
+  publicId!: string;
 
   @Property()
-  source_design_id!: string;
+  sourceDesignId!: string;
 
   @Property()
-  created_by_user_id!: string;
+  createdByUserId!: string;
 
   @Property()
   name!: string;
@@ -71,35 +71,35 @@ export class SellerTemplate {
   @Property()
   description!: string;
 
-  @Property()
-  product_id!: ObjectId | null;
+  @Property({ nullable: true })
+  productId!: ObjectId | null;
 
   @Property()
-  width_in!: number;
+  widthIn!: number;
 
   @Property()
-  height_in!: number;
+  heightIn!: number;
 
   @Property()
   ppi!: number;
 
-  @Property()
-  cut_path_svg!: string | null;
+  @Property({ nullable: true })
+  cutPathSvg!: string | null;
 
   @Property()
   layers!: SellerLayer[];
 
   @Property()
-  layer_count!: number;
+  layerCount!: number;
 
   @Property()
-  total_bytes!: number;
+  totalBytes!: number;
 
   @Property()
-  is_active!: boolean;
+  isActive!: boolean;
 
-  @Property()
-  published_at!: Date | null;
+  @Property({ nullable: true })
+  publishedAt!: Date | null;
 
   @Property()
   status!: number;

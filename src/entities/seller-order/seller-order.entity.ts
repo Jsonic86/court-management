@@ -7,57 +7,57 @@ export class SellerOrder {
   _id: ObjectId;
 
   @Property()
-  order_number: string;
+  orderNumber: string;
+
+  @Property({ nullable: true })
+  customerUserId: ObjectId | null;
+
+  @Property({ nullable: true })
+  customerEmail: string | null;
+
+  @Property({ nullable: true })
+  customerName: string | null;
+
+  @Property({ nullable: true })
+  shippingAddress: any;
+
+  @Property({ nullable: true })
+  billingAddress: any;
 
   @Property()
-  customer_user_id: ObjectId | null;
+  subtotalCents: number;
 
   @Property()
-  customer_email: string;
+  shippingCents: number;
 
   @Property()
-  customer_name: string;
+  taxCents: number;
 
   @Property()
-  shipping_address: any;
-
-  @Property()
-  billing_address: any;
-
-  @Property()
-  subtotal_cents: number;
-
-  @Property()
-  shipping_cents: number;
-
-  @Property()
-  tax_cents: number;
-
-  @Property()
-  total_cents: number;
+  totalCents: number;
 
   @Property()
   currency: string;
 
   @Property()
-  payment_method: string;
+  paymentMethod: string;
 
   @Property()
-  payment_status: number;
+  paymentStatus: number;
 
   @Property()
-  fulfillment_status: number;
+  fulfillmentStatus: number;
 
-  @Property()
-  paid_at: Date | null;
+  @Property({ nullable: true })
+  paidAt: Date | null;
 
-  @Property()
-  shipped_at: Date | null;
+  @Property({ nullable: true })
+  shippedAt: Date | null;
 
-  @Property()
-  tracking_number: string | null;
+  @Property({ nullable: true })
+  trackingNumber: string | null;
 
-  @Property()
+  @Property({ nullable: true })
   notes: string | null;
 
   @Property()
