@@ -12,6 +12,7 @@ import { TransformInterceptor } from './common/response/transform.interceptor';
 import { AllExceptionsFilter } from './common/filter/all-exceptions.filter';
 import { ProductModule } from './modules/product/product.module';
 import { SellerOrderModule } from './modules/seller-order/seller-order.module';
+import { CategoryModule } from './modules/category/category.module';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { SellerOrderModule } from './modules/seller-order/seller-order.module';
     SellerTemplateModule,
     ProductModule,
     SellerOrderModule,
+    CategoryModule,
   ],
   controllers: [AppController],
   providers: [
